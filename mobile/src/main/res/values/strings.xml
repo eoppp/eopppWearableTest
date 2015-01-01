@@ -5,6 +5,6 @@
   <string name="hello_world">Hello world!</string>
   <string name="action_settings">Settings</string>
 
-  <string name="test1">開発用テスト</string>
+  <string name="test1">Android Wearアプリから、eopppという名前のWatch Faceを選んで下さい。</string>
 
 </resources>

@@ -3,6 +3,7 @@ package com.eoppp.eopppsimple;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
@@ -83,7 +84,7 @@ public class MyWatchFaceService extends CanvasWatchFaceService {
       /* load the background image */
       //mBackgroundBitmapに、black_background.pngを入れる。
       Resources resources = MyWatchFaceService.this.getResources();
-      Drawable backgroundDrawable = resources.getDrawable(R.drawable.size512_512);
+      Drawable backgroundDrawable = resources.getDrawable(R.drawable.icon);
       mBackgroundBitmap = ((BitmapDrawable) backgroundDrawable).getBitmap();
 
 
@@ -93,6 +94,7 @@ public class MyWatchFaceService extends CanvasWatchFaceService {
       //縁線の幅を決める
       mHourPaint.setStrokeWidth(10f);
       mHourPaint.setAntiAlias(true);
+      mHourPaint.setColor(Color.LTGRAY);
       //縁線の角の形を決める
       mHourPaint.setStrokeCap(Paint.Cap.ROUND);
 
@@ -101,6 +103,7 @@ public class MyWatchFaceService extends CanvasWatchFaceService {
       //縁線の幅を決める
       mMinutePaint.setStrokeWidth(3f);
       mMinutePaint.setAntiAlias(true);
+      mMinutePaint.setColor(Color.LTGRAY);
       //縁線の角の形を決める
       mMinutePaint.setStrokeCap(Paint.Cap.ROUND);
 
